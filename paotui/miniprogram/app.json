@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/person/person"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": " 跑跑乐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabBar/bt1.png",
+      "selectedIconPath": "images/tabBar/bt1-h.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "images/tabBar/bt2.png",
+      "selectedIconPath": "images/tabBar/bt2-h.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "我的",
+      "iconPath": "images/tabBar/bt5.png",
+      "selectedIconPath": "images/tabBar/bt5-h.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

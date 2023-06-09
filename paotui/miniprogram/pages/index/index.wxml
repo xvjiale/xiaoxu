@@ -1,0 +1,22 @@
+<view class="banner">
+  <swiper indicator-dots='true' autoplay="true" class="banner-body">
+    <swiper-item wx:for="{{banner}}" wx:key="index" class="banner-item">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+
+<view class="notice" bindtap="hand">
+  <image src="../../images/xiaolaba.png"></image>
+  <text>关注工作号可享订单推送，接单员请务必添加客服v:18236335490</text>
+</view>
+
+<view class="container">
+  <view class="body" wx:for="{{indexConfig}}" wx:key="index">
+    <view class="icon">
+      <image src="{{item.icon}}"></image>
+    </view>
+    <text class="text">{{item.text}}</text>
+  </view>
+</view>
+
+</view>

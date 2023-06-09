@@ -1,0 +1,63 @@
+<view class="info">
+  <image class="avatar" wx:if="{{!hasUserInfo}}" src="../../images/touxiang.png"></image>
+  <image class="avatar" wx:if="{{hasUserInfo}}" src="{{userInfo.avatarUrl}}"></image>
+
+  <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">点我授权</button>
+    <button wx:else bindtap="getUserInfo">点我授权</button>
+  </block>
+  <view class="name"  wx:if="{{hasUserInfo}}">
+    <text>{{userInfo.nickName}}</text>
+    <text>{{userInfo.gender === 0 ?'男' : '女'}}</text>
+  </view>
+  <image class="into" wx:if="{{hasUserInfo}}" src="../../images/jiantou.png"></image>
+</view>
+
+
+
+<view class="cell mt">
+  <view class="cellLeft">
+    <image src="../../images/shenqing.png"></image>
+    <text>申请接单</text>
+  </view>
+  <text class="cellRight">></text>
+</view>
+
+<view class="customer mt">
+  <view class="tips">
+    问题请点击微信客服复制到微信添加好友说明
+  </view>
+</view>
+<view class="cell mt">
+  <view class="cellLeft">
+    <image src="../../images/weixin.png"></image>
+    <text>微信客服</text>
+  </view>
+  <text class="cellRight">></text>
+</view>
+<view class="cell">
+  <view class="cellLeft">
+    <image src="../../images/guanfang.png"></image>
+    <text>客服官服</text>
+  </view>
+  <text class="cellRight">></text>
+</view>
+
+<view class="oter mt">
+  <view class="cell">
+  <view class="cellLeft">
+    <image src="../../images/guanyv.png"></image>
+    <text>关于我们</text>
+  </view>
+  <text class="cellRight">></text>
+</view>
+<view class="cell">
+  <view class="cellLeft">
+    <image src="../../images/tousu.png"></image>
+    <text>投诉建议</text>
+  </view>
+  <text class="cellRight">></text>
+</view>
+</view>
+
+<view class="banben mt">当前版本：1.0.0 </view>
